@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { TOKEN_POST, TOKEN_GET, TOKEN_VALIDATE_POST } from './api'
+import { TOKEN_POST, USER_GET, TOKEN_VALIDATE_POST } from './Api'
 
 export const UserContext = React.createContext()
 
@@ -23,7 +23,7 @@ export const UserStorage = ({children}) => {
   }, [navigate])
 
   async function getUser(token){
-    const {url, options} = TOKEN_GET(token)
+    const {url, options} = USER_GET(token)
     const res = await fetch(url, options)
     const json = await res.json()
     setData(json)
