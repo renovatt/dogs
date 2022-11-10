@@ -46,7 +46,7 @@ export const UserStorage = ({children}) => {
       setLogin(false)
     } finally{
       setLoading(false)
-    }
+    } 
   } 
 
   React.useEffect(() => {
@@ -64,7 +64,9 @@ export const UserStorage = ({children}) => {
           userLogout()
         } finally {
           setLoading(false)
-        }
+        } 
+      } else {
+        setLogin(false)
       }
     }
     autoLogin()
