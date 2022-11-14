@@ -16,7 +16,6 @@ export const FeedPhotos = ({page, user, setModalPhoto, setInfinite}) => {
       const {url, options} = PHOTOS_GET({page, total, user})
       const {res, json} = await request(url, options)
       if(res && res.ok && json.length < total) setInfinite(false)
-      console.log(json)
     }
     fetchPhotos()
   }, [request, user, page, setInfinite])
