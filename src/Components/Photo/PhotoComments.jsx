@@ -1,6 +1,6 @@
 import React from 'react'
 import { UserContext } from '../../UserContext'
-import {PhotoCommentsForm} from './PhotoCommentsForm'
+import { PhotoCommentsForm } from './PhotoCommentsForm'
 import styles from './PhotoComments.module.css'
 
 export const PhotoComments = (props) => {
@@ -14,13 +14,13 @@ export const PhotoComments = (props) => {
   }, [comments])
 
   return (
-    <div className={styles.comments} ref={commentsSection}>
+    <div className={`${styles.comments} ${props.single ? styles.single : ''}`} ref={commentsSection}>
       {comments.map(comment =>
         <li key={comment.comment_ID}>
-        <b>{comment.comment_author}: </b>
-        <span>{comment.comment_content}</span>
-      </li>)}
-      {login && <PhotoCommentsForm id={props.id} setComments={setComments}/>}
+          <b>{comment.comment_author}: </b>
+          <span>{comment.comment_content}</span>
+        </li>)}
+      {login && <PhotoCommentsForm id={props.id} setComments={setComments} single={props.single} />}
     </div>
   )
 }
