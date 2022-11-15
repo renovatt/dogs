@@ -7,6 +7,6 @@ export const Head = (props) => {
         .setAttribute('content', props.description)
     }, [props])
     return (
-        <div>Head</div>
+        <></>
     )
 }
