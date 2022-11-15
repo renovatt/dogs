@@ -18,7 +18,7 @@ export const UserStats = () => {
 
   if (loading) return <Loading />
   if (error) return <Error error={error} />
-  if (data > 0)
+  if (data?.length > 0)
     return (
       <section>
         <Head title="Estatísticas" />
