@@ -29,7 +29,7 @@ export const LoginPasswordLost = () => {
       {data ?
         <p style={{color: '#4c1'}}>{data}</p> :
         <form onSubmit={handleSubmit}>
-          <Input label="Email / Unsuário" type="text" name="login" {...login} />
+          <Input label="Email / Usuário" type="text" name="login" {...login} />
           {loading ? <Button disabled>Enviando...</Button> :
             <Button>Enviar Email</Button>
           }

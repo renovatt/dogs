@@ -33,7 +33,7 @@ export const LoginForm = () => {
         {loading ? (<Button disabled>Carregando...</Button>) : (<Button>Entrar</Button>)}
         <Error error={error && 'Dados incorretos.'} />
       </form>
-      <Link className={styles.lost} to='/login/perdeu'>Pedeu sua senha?</Link>
+      <Link className={styles.lost} to='/login/perdeu'>Perdeu sua senha?</Link>
       <div className={styles.cadastro}>
         <h2 className={styles.subtitle}>Cadastro</h2>
         <p>Ainda não possui sua conta? Cadastre-se já!</p>
