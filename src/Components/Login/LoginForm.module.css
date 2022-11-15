@@ -1,15 +1,15 @@
-.from{
+.form {
   margin-bottom: 2rem;
 }
 
-.lost{
+.lost {
   display: inline-block;
   color: #666;
   padding: .5rem 0;
   line-height: 1;
 }
 
-.lost::after{
+.lost::after {
   content: '';
   height: 2px;
   width: 100%;
@@ -17,22 +17,23 @@
   display: block;
 }
 
-.cadastro{
+.cadastro {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
-.cadastro p{
+.cadastro p {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.subtitle{
+.subtitle {
   font-family: var(--type-second);
   line-height: 1;
   font-size: 2rem;
 }
 
-.subtitle::after{
+.subtitle::after {
   content: '';
   display: block;
   background: #ddd;
