@@ -10,7 +10,7 @@
 #
 
 <div align='center'>
-<h1>Nome do projeto <br> <br>
+<h1>Dogs <br> <br>
 <img src="./public/logo512.png" width="30px"></h1>
 </div>
 
